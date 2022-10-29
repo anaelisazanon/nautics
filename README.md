@@ -1,2 +1,2 @@
 # nautics
-Projeto realizado utilizando HTML5 e CSS
+Projeto realizado utilizando HTML5, CSS, Photoshop e Figma
