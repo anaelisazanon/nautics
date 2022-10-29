@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald:wght@500&display=swap');
+*{margin: 0; padding: 0;}
+
+body{
+  background-color: rgb(250, 252, 253)
+}
+
+header, img{
+  width:100%;
+  height: 380px;
+}
+
+nav{
+  background-color: #00BCD4;
+  text-align: center;
+  padding: 10px;
+}
+
+a{
+  font: 1.2rem 'Montserrat', sans-serif;
+  text-decoration: none;
+}
+.a-menu{
+  margin-right: 40px;
+  font-weight: bold;
+}
+
+.a-menu:link, .a-menu:visited{
+  color:#fff;
+}
+.a-menu:hover, .a-menu:active {
+  color:#5D5C5C;
+}
+
+article{
+  width: 100%;
+  background-color: #FFFFFF;
+  padding: 20px;
+  box-sizing: border-box;
+
+
+}
+
+h1{
+  font: 3rem 'Oswald', sans-serif;
+  color:#5D5C5C;
+  text-align: center;
+  margin-bottom: 30px;
+  /*Colocar margem nas 4 dimensões: margin: 5px 10px 20px 30px;*/
+
+}
+
+p{
+  font: 1.1rem 'Montserrat', sans-serif;
+  color: #757575;
+  text-align: justify;
+  /*text-indent: 20px; Coloca indentação*/
+  line-height: 30px;
+}
+
+/*tag para alterar uma única parte, somada com ID*/
+#txt-preto{
+  color:#000;
+}
+
+section{
+  padding: 20px;
+}
+/*ID - único, só pode definir uma vez, usa #
+Class - pode ser criado e usado varias vezes, usa ponto */
+
+h2{
+  font: 2rem 'Oswald', sans-serif;
+  color: #5D5C5C; 
+  margin-bottom: 20px;
+}
+
+#pag-sobre{
+  background-color: #00BCD4;
+}
+
+#pag-sobre h2{
+  color: #fff; 
+}
+
+#pag-sobre p{
+  color: #fff; 
+  margin-top: 30px;
+}
+
+ul{
+  /*list-style-position: inside;
+  usar só dois valores no padding, está repetindo os 
+  valores, 20px 50px 20px 50px
+  */
+  list-style-type: circle;
+  padding: 20px 50px;
+}
+
+li{
+  font: 1.1rem 'Montserrat', sans-serif;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+#pag-acomodacoes{
+  background-color: #EEE;
+
+}
+
+#container{
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.card{
+  background-color: #FFFFFF;
+  margin: 10px;
+  width: 25%;
+  border-radius: 8px;
+  /*box-shadow: 10px 10px 10px #888888;*/
+  box-shadow: 0 4px 8px #CCC;
+  transition: 1s;
+  text-align: center;
+
+}
+.card:hover{
+  box-shadow: 0 4px 8px #CCC;
+}
+.card-content{
+  padding: 10px;
+}
+
+.card-content p{
+  font: 1rem 'Montserrat', sans-serif;
+  line-height: 20px;
+  text-align: center;
+}
+
+h3{
+  font: 2rem 'Oswald', sans-serif;
+  color: #5D5C5C; 
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.img-acom{
+  width: 400px;
+  height: 200px;
+
+}
+/*material.io - cards estilo
+w3schools.com*/
+
+#pag-entreterimento p{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#container-entret{
+  display: flex;
+}
+
+.coluna-entret{
+  padding: 40px;
+}
+
+.container-imagens{
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-imagens p{
+  color: #000;
+}
+
+.img-icons{
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+}
+
+video{
+  width: 400px;
+}
+
+footer{
+  background-color: #000;
+  padding: 20px;
+}
+
+footer p{
+  color: #fff;
+  text-align: center;
+}
+
+footer a{
+  color: #fff;
+}
+
+footer a:hover{
+  color:#5D5C5C
+}
+
+
+/*página agendamentos*/
+
+#pag-agendamentos{
+
+}
+
+#pag-agendamentos p{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form{
+  width:400px;
+  margin: 0 auto;
+
+}
+input, select, textarea{
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  box-sizing: border-box;
+  border: 1px solid #757575;
+  color:#757575;
+
+}
+
+label, fieldset, input, select, textarea{
+  font: 1rem 'Montserrat', sans-serif;
+}
+
+fieldset{
+  border: 1px solid #CCC;
+  margin-bottom: 10px;
+  padding: 10px;
+
+}
+
+#data-hora-num{
+  display: flex;
+}
+
+input[type="radio"], input[type="checkbox"]{
+  width: 15px;
+  height: 15px;
+  margin-left: 50px;
+}
+
+textarea{
+  height: 80px;
+}
+
+#botoes-form{
+  display: flex;
+}
+
+input [type="submmit"], input [type="reset"] {
+  margin: 20px;
+  background-color: rgb(71, 151, 34);
+  color:#fff;
+  border: 0;
+  border-radius: 5px;
+}
+
+input [type="reset"]  {
+  background-color: rgb(151, 34, 50);
+}

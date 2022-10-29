@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title> Nautics Resort</title>
+		<meta charset="utf-8" />
+		<meta name="author" content="Ana Elisa G Zanon" />
+		<meta name="keywords" content="resort, nautics, hotel" />
+		<meta name="description" content="O Resort perfeito para descansar com a família" />
+		<link rel="stylesheet" type="text/css" href="estilo.css" />
+	</head>
+	<body>
+		<header>
+			<img src="img/banner.png" alt="Banner contendo a logo do Nautics Resort e duas pessoas chegando no resort"/>
+		</header>
+
+		<nav>
+			<a class= "a-menu" href="index.html"> HOME</a>
+			<a class= "a-menu" href="index.html#pag-sobre">SOBRE O RESORT</a>
+			<a class= "a-menu" href="index.html#pag-acomodacoes">ACOMODAÇÕES E PACOTES</a>
+			<a class= "a-menu" href="index.html#pag-entreterimento">ENTRETERIMENTO</a>
+			<a class= "a-menu" href="#">AGENDAMENTOS</a>
+		</nav>
+
+		<section id="pag-agendamentos">
+			<h1>Agendamentos</h1>
+
+				<p>Agende sua acomodação!</p>
+
+			<form name="" method=""action="">
+				<label for="nome">Nome:</label>
+				<input id="nome" type="text" name="nome_completo" placeholder="Digite seu nome completo" required />
+				<!--required para campo obrigatorio, name para sinalizar após o envio, referencia do valor. Autofocus seleciona o campo do nome após abrir a pagina-->
+
+				<label for="email">E-mail:</label>
+				<input id="email" type="email" name="email" placeholder="nomeusuario@email.com" />
+
+				<label for="senha">Senha:</label>
+				<input id="senha" type="password" name="senha" placeholder="Somente números" />
+
+				<label for="celular">Celular:</label>
+				<input id="celular" type="tel" name="celular" placeholder="(99)99999-9999" pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$" />
+
+				<div id="data-hora-num">
+					<div>
+						<label for="data">Data:</label>
+						<input id="data" type="date" name="data" />
+					</div>
+					<div>
+						<label for="hora">Hora:</label>
+						<input id="hora" type="time" name="hora" />
+					</div>
+					<div>
+						<label for="dias">Dias:</label>
+						<input id="dias" type="number" name="dias" placeholder="Dias" min="1" max="10" step="1" />
+					</div>
+				</div>
+
+				<label for="acomodacao">Acomodação:</label>
+				<select id="acomodacao" name="acomodacao">
+					<option value="">Selecione</option>
+					<option value="prata">Prata - R$100/diária</option>
+					<option value="ouro">Ouro - R$150/diária</option>
+					<option value="diamante">Diamante - R$200/diária</option>
+					<option value="premium">Premium - R$250/diária</option>
+				</select>
+
+				<fieldset>
+					<legend>Gênero:</legend>
+					<input id="masc" type="radio" name="genero" value="masc" /> <label for="masc">Masculino</label>
+					<input id="fem" type="radio" name="genero" value="fem" /> <label for="fem">Feminino</label>
+				</fieldset>
+				<!--name igual p indicar que so pode selecionar um-->
+
+				<fieldset>
+					<legend>Extras:</legend>
+					<input id="camaextra" type="checkbox" name="extra" value="camaextra" /> <label for="camaextra">Cama extra</label><br>
+					<input id="recreacao" type="checkbox" name="extra" value="recreacaoinfantil" /> <label for="recreacao">Recreação infantil</label><br>
+					<input id="fumante" type="checkbox" name="extra" value="quartofumante" /> <label for="fumante">Quarto para fumantes</label><br>
+					<input id="acessofacilitado" type="checkbox" name="extra" value="acessofacilitado" /> <label for="acessofacilitado">Acesso facilitado para grupos especiais </label>
+				</fieldset>
+
+				<label for="msg">Mensagem:</label>
+				<textarea id="msg" cols="50" rows="4">
+				</textarea>
+
+				<div id="botoes-form">
+					<input type="submit" name="btn-agendar" value="AGENDAR" />
+					<input type="reset" name="btn-cancelar" value="CANCELAR" />
+				</div>
+			</form>
+			
+		</section>	
+		<footer>
+			<p>Desenvolvido por <a href="http://instagram.com/ana_gzanon" target="_blank">Ana Elisa Zanon</a> - 2020</p>
+		</footer>
+	</body>
+</html>
